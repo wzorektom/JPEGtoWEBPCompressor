@@ -19,6 +19,13 @@ namespace JPEGtoWEBPCompressor
         static string[] supportedExtensions = { ".jpg", ".jpeg" };
         static void Main(string[] args)
         {
+
+            if (!Directory.Exists(imageFolderPath))
+            {
+                Console.WriteLine("Creating the image folder...");
+                Directory.CreateDirectory(imageFolderPath);
+            }
+
             Process.Start("explorer.exe", imageFolderPath);
 
             Console.WriteLine("Current default values:");
