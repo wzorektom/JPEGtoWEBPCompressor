@@ -13,7 +13,7 @@ namespace JPEGtoWEBPCompressor
 
         static int maxDimension = 800;
         static int compressionPercentage = 50;
-        static string imageFolderPath = @"D:\Images";
+        static string imageFolderPath = @"C:\Temp\Images";
         static string resizedFolderPath = Path.Combine(imageFolderPath, "ResizedJPEGImages");
         static string convertedFolderPath = Path.Combine(imageFolderPath, "WEBpConvertedImages");
         static string[] supportedExtensions = { ".jpg", ".jpeg" };
